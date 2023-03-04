@@ -1,0 +1,157 @@
+* {
+    brder: 1px solid red;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*---------------HEADER----------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(49, 56, 77);
+    color: white;
+    padding: 0 10%;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*---------------------HERO-------------------------------*/
+
+.hero {
+    background-color: rgb(49, 56, 77);
+    color: white;
+    padding: 30px 10%;
+    display: flex;
+    flex: 1;
+    gap: 15px;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.hero p {
+    margin: 0;
+    font-size: 25px;
+    overflow-wrap: break-word;
+    inline-size: 85%;
+}
+
+.button {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hero button {
+    align-self: flex-start;
+    background-color: rgb(75, 123, 255);
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.img-container {
+    display: flex;
+    object-fit: cover;
+    flex: 1;
+    flex-basis: 200px;
+}
+
+.hero img {
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.hero-container {
+  display: flex;
+  flex: 1;
+  min-width: 40%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*---------------------------BIRDS-------------------*/
+
+.birds-container {
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+}
+
+.birds img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+figcaption {
+    overflow-wrap: break-word;
+    inline-size: 100%;
+    text-align: center;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 200px;
+}
+
+.quote {
+    background-color: rgb(224, 223, 223);
+    padding: 40px 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.quote-container {
+    width: 50%;
+}
+
+.quote-text {
+    overflow-wrap: break-word;
+    inline-size: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.credit {
+    text-align: end;
+    margin-top: 5px;
+    font-weight: 700;
+}
