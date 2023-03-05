@@ -1,188 +1,255 @@
-* {
-    borer: 1px solid red;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    font-size: 20px;
-    
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto", arial;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 /*---------------HEADER----------------------*/
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(49, 56, 77);
-    color: white;
-    padding: 0 10%;
+nav {
+  /*Display stuff*/
+  display: flex;
+  align-items: center;
+  /*Box model stuff*/
+  padding: 20px 0 20px 90px;
+  background-color: rgb(49, 56, 77);
+  /*Typography stuff*/
+  color: white;
 }
 
-.logo {
-    font-weight: 900;
-    font-size: 3vw;
+.logo img {
+  /*Box model stuff*/
+  width: 84px;
+  height: 84px;
+  margin-right: auto;
+  /*Typography stuff*/
+  /* font-size: 2.5rem;
+  font-weight: 900; */
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+.ul {
+  /*Display stuff*/
+  display: flex;
+
+  /*Box model stuff*/
+  margin-left: auto;
+  padding: 0 90px 0 0;
+  /*Miscellaneous*/
+  list-style: none;
 }
 
 a {
-    color: white;
-    text-decoration: none;
-    font-size: 2.3vw;
+  /*Typography stuff*/
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.separator {
+  /*Box model stuff*/
+  border: 2px solid rgb(255, 138, 138);
 }
 
 /*---------------------HERO-------------------------------*/
 
 .hero {
-    background-color: rgb(49, 56, 77);
-    color: white;
-    padding: 30px 10%;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 15px;
-    padding-bottom: 80px;
-    max-height: 80vh;
-}
-
-h1 {
-    font-size: 12vw;
-    font-weight: 900;
-    margin: 0;
-}
-
-.hero p {
-    margin: 0;
-    font-size: 2vw;
-    overflow-wrap: break-word;
-    inline-size: 100%;
-}
-
-.button {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.hero button {
-    align-self: flex-start;
-    background-color: rgb(75, 123, 255);
-    border: none;
-    font-size: 20px;
-    padding: 10px 20px;
-    color: white;
-    font-weight: 700;
-    border-radius: 8px;
-}
-
-.img-container {
-    display: flex;
-    height: 100%;
-    max-width: 500px;
-}
-
-.hero img {
-    object-fit: cover;
-    max-width: 100%;
-    border-radius: 8px;
+  /*Display stuff*/
+  display: flex;
+  justify-content: center;
+  /*Box model stuff*/
+  padding: 90px;
+  background-color: rgb(49, 56, 77);
+  /*Typography stuff*/
+  color: white;
+  align-items: center;
 }
 
 .hero-container {
+  /*Display stuff*/
   display: flex;
-  align-items: center;
-  flex: 1;
-  gap: 50px;
-  min-width: 40%;
-  justify-content: space-between;
+  flex-direction: column;
+  text-align: left;
+  flex-basis: 400px;
+  margin-right: 50px;
+}
+
+.hero-container p {
+  /*Box model stuff*/
+  margin: 10px 0;
+  /*Typography stuff*/
+  font-size: 2rem;
+  /*Miscellaneous*/
+  /*  inline-size: 100%;
+  overflow-wrap: break-word; */
+}
+
+h1 {
+  /*Box model stuff*/
+  margin: 0;
+  /*Typography stuff*/
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero button {
+  /*Box model stuff*/
+  padding: 10px 20px;
+  width: 210px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(75, 123, 255);
+  /*Typography stuff*/
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.img-container img {
+  /*Box model stuff*/
+  height: 350px;
+  width: 500px;
+  border-radius: 8px;
 }
 
 /*---------------------------BIRDS-------------------*/
 
 .birds {
-    text-align: center;
-    margin: 0 0;
-    padding: 5% 10%;
-    background-color: bisque;
+  text-align: center;
+  margin: 0 0;
+  padding: 5% 10%;
 }
 
 .birds h2 {
-    margin: 0 0 4% 0;
+  margin: 0 0 4% 0;
 }
 
 .birds-container {
-    display: flex;
-    flex: 1 1 190px;
-    justify-content: space-between;
-    column-gap: 10px;
-    flex-wrap: wrap;
+  display: flex;
+  flex: 1 1 190px;
+  justify-content: space-between;
+  column-gap: 10px;
+  flex-wrap: wrap;
 }
 
 .birds img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 figcaption {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    overflow-wrap: break-word;
-    inline-size: 100%;
-    text-align: center;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  overflow-wrap: break-word;
+  inline-size: 100%;
+  text-align: center;
 }
 
 figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    flex: 1 1 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  flex: 1 1 100px;
 }
 
 figure div {
-    height: 100%;
-    display: flex;
+  height: 100%;
+  display: flex;
 }
 
 /*---------------QUOTE-----------------*/
 
 .quote {
-    background-color: rgb(224, 223, 223);
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  /*Display stuff*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*Box model stuff*/
+  padding: 40px 0;
+  background-color: rgb(224, 223, 223);
 }
 
 .quote-container {
-    width: 50%;
+  /*Box model stuff*/
+  width: 50%;
 }
 
 .quote-text {
-    overflow-wrap: break-word;
-    inline-size: 100%;
-    text-align: center;
-    margin-bottom: 0;
-    font-style: italic;
-    font-size: 22px;
+  /*Box model stuff*/
+  margin-bottom: 0;
+  /*Typography stuff*/
+  font-size: 22px;
+  font-style: italic;
+  text-align: center;
+  /*Miscellaneous*/
+  inline-size: 100%;
+  overflow-wrap: break-word;
 }
 
 .credit {
-    text-align: end;
-    margin-top: 5px;
-    font-weight: 700;
+  /*Box model stuff*/
+  margin-top: 5px;
+  /*Typography stuff*/
+  font-weight: 700;
+  text-align: end;
+}
+
+/*-------------SIGN-UP------------------*/
+
+.sign-up {
+  /*Display stuff*/
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.sign-up-card {
+  /*Display stuff*/
+  display: flex;
+  justify-content: space-around;
+  /*Box model stuff*/
+  width: 60%;
+  margin: 70px;
+  padding: 0 50px;
+  border-radius: 10px;
+  background-color: rgb(75, 123, 255);
+  /*Typography stuff*/
+  color: white;
+}
+
+.button-sign-up {
+  /*Display stuff*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sign-up button {
+  /*Box model stuff*/
+  border: 2px solid white;
+}
+
+/*-------------FOOTER-------------------*/
+
+footer {
+  /*Box model stuff*/
+  padding: 25px;
+  background-color: rgb(49, 56, 77);
+  /*Typography stuff*/
+  text-align: center;
+  color: white;
 }
