@@ -19,18 +19,19 @@ nav {
   /*Display stuff*/
   display: flex;
   align-items: center;
+  column-gap: 150px;
   /*Box model stuff*/
   padding: 20px 0 20px 90px;
   background-color: rgb(49, 56, 77);
   /*Typography stuff*/
   color: white;
+  white-space: nowrap;
 }
 
-.logo img {
+nav h2 {
   /*Box model stuff*/
-  width: 84px;
-  height: 84px;
-  margin-right: auto;
+  font-size: 2.5rem;
+  margin: 0 auto 0 0;
   /*Typography stuff*/
   /* font-size: 2.5rem;
   font-weight: 900; */
@@ -89,15 +90,15 @@ a {
   /*Typography stuff*/
   font-size: 2rem;
   /*Miscellaneous*/
-  /*  inline-size: 100%;
-  overflow-wrap: break-word; */
+  inline-size: 300px;
+  overflow-wrap: break-word;
 }
 
 h1 {
   /*Box model stuff*/
   margin: 0;
   /*Typography stuff*/
-  font-size: 48px;
+  font-size: 4.5rem;
   font-weight: 900;
 }
 
@@ -135,40 +136,35 @@ h1 {
 
 .birds-container {
   display: flex;
-  flex: 1 1 190px;
-  justify-content: space-between;
-  column-gap: 10px;
+  justify-content: center;
+  column-gap: 25px;
+  row-gap: 10px;
   flex-wrap: wrap;
 }
 
 .birds img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 15px;
+  border: 4px solid rgb(75, 123, 255);
 }
 
 figcaption {
   display: flex;
+  margin-top: 6px;
+  font-size: 1.2rem;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
   overflow-wrap: break-word;
-  inline-size: 100%;
+  inline-size: 300px;
   text-align: center;
 }
 
 figure {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   margin: 0;
-  flex: 1 1 100px;
-}
-
-figure div {
-  height: 100%;
-  display: flex;
 }
 
 /*---------------QUOTE-----------------*/
@@ -240,7 +236,16 @@ figure div {
 
 .sign-up button {
   /*Box model stuff*/
+  /*Box model stuff*/
+  padding: 10px 20px;
+  width: 170px;
   border: 2px solid white;
+  border-radius: 8px;
+  background-color: rgb(75, 123, 255);
+  /*Typography stuff*/
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
 }
 
 /*-------------FOOTER-------------------*/
@@ -250,6 +255,5 @@ footer {
   padding: 25px;
   background-color: rgb(49, 56, 77);
   /*Typography stuff*/
-  text-align: center;
   color: white;
 }
